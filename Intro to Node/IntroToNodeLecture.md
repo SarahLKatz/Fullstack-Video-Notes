@@ -51,3 +51,6 @@ EX - "Chalk"
 ``` let chalk = require('chalk') ```
 
 We use 'package.json' to track our npm modules. To create a package.json file with default settings, use ```npm init --y```
+
+#### Asynchronous/Non-Blocking I/O
+When something will take an unknown amount of time, Node creates a separate thread, and when that operation completes, and then whenever JS finishes whatever else it will doing, it will check on that operation. This is really efficient, because it means that we as developers don't need to worry about the multithreading - Node does it for us.
