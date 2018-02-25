@@ -49,5 +49,7 @@ Parts of an HTTP Request:
 __Express is a node library for request handling.__ It wraps around Node's HTTP library.  
 Express gives us very easy route handling.
 
+_Middleware_ - function(req, res, next){} - does something to every request and then passes the request forward (by calling next())
+
 req.params - variable parameters in the url (eg, /pokemon/:id => /pokemon/1)
 req.query - optional queries in the url (can be anything - eg, /pokemon => /pokemon?sorted=true)
